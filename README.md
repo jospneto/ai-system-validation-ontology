@@ -37,6 +37,20 @@ Relações materiais e de mediação do diagrama (ex.: `atorHasCritriotico`, `at
 
 > Nota: a exportação atual do `.ttl` está com labels em `rdfs:label` sem acentuação correta (problema de codificação na exportação da ferramenta); os nomes internos (IRIs) também tiveram acentos removidos. A correção deve ser feita em uma nova exportação do modelo.
 
+## JSON (OntoUML Schema)
+
+`model/AI System Ethics Validation Ontology.json` é a exportação nativa do modelo no formato [ontouml-schema](https://github.com/OntoUML/ontouml-schema), usado pelo OntoUML Plugin / ontouml-js para representar o projeto de forma estruturada e independente de ferramenta.
+
+Estrutura do arquivo:
+
+- `Project` (raiz): `id`, `name`, `description`, `type`, `model`, `diagrams`.
+- `model`: `Package` contendo `contents`, a lista de elementos do diagrama — classes (`Class`) com seus estereótipos (`kind`, `subkind`, `phase`, `role`, `relator`, `mode`, etc.), generalizações, relações e generalization sets.
+- `diagrams`: representação visual (posição, forma e estilo dos elementos), usada para reconstruir o diagrama na ferramenta de modelagem.
+
+Esse JSON é a fonte de verdade estrutural do modelo — a partir dele são gerados tanto o diagrama (`diagrams/`) quanto a exportação gUFO (`.ttl`).
+
+> Nota: mesmo problema de codificação do `.ttl` está presente aqui — termos acentuados (ex. "Critério Ético", "Domínio") vêm com bytes corrompidos no JSON exportado. Recomenda-se reexportar o modelo garantindo UTF-8.
+
 ## Ferramentas
 
 - Modelagem: OntoUML (Visual Paradigm / OntoUML Plugin).
