@@ -1,0 +1,88 @@
+@prefix : <http://example.com#>.
+@prefix gufo: <http://purl.org/nemo/gufo#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<http://example.com> rdf:type owl:Ontology;
+    owl:imports gufo:.
+:IAGenerativa rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "IA Generativa"@en.
+:SoftwareGeradoPorIA rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Software Gerado por IA"@en.
+:Critriotico rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Crit�rio �tico"@en.
+:Framework rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Framework"@en.
+:EmConformidade rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Em conformidade"@en.
+:EmViolao rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Em viola��o"@en.
+:AvaliaoDeConformidade rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:Relator;
+    rdfs:label "Avalia��o de Conformidade"@en.
+:NvelDeRisco rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "N�vel de Risco"@en.
+:Domnio rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Dom�nio"@en.
+:Ator rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Ator"@en.
+:Legislao rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Legisla��o"@en.
+:InstrumentoNormativo rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Instrumento Normativo"@en.
+:Desenvolvedor rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Desenvolvedor"@en.
+:EngenheiroDeSoftware rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Engenheiro de Software"@en.
+:OrgoRegulador rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Org�o Regulador"@en.
+:SoftwareGeradoPorIA rdfs:subClassOf :IAGenerativa.
+:Legislao rdfs:subClassOf :InstrumentoNormativo.
+:Framework rdfs:subClassOf :InstrumentoNormativo.
+:EmViolao rdfs:subClassOf :SoftwareGeradoPorIA.
+:EmConformidade rdfs:subClassOf :SoftwareGeradoPorIA.
+:EngenheiroDeSoftware rdfs:subClassOf :Ator.
+:Desenvolvedor rdfs:subClassOf :Ator.
+:OrgoRegulador rdfs:subClassOf :Ator.
+:atorHasCritriotico rdf:type owl:ObjectProperty;
+    rdfs:domain :Ator;
+    rdfs:range :Critriotico;
+    rdf:type gufo:MaterialRelationshipType.
+:atorHasSoftwareGeradoPorIa rdf:type owl:ObjectProperty;
+    rdfs:domain :Ator;
+    rdfs:range :SoftwareGeradoPorIA;
+    rdf:type gufo:MaterialRelationshipType.
+:critrioticoHasSoftwareGeradoPorIa rdf:type owl:ObjectProperty;
+    rdfs:domain :Critriotico;
+    rdfs:range :SoftwareGeradoPorIA;
+    rdf:type gufo:MaterialRelationshipType.
+:Domnio rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:externallyDependsOn;
+  owl:someValuesFrom :Critriotico
+].
+:NvelDeRisco rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf gufo:inheresIn ];
+  owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :IAGenerativa
+].
+:IAGenerativa rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:inheresIn;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :NvelDeRisco
+].
+:Ator rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:someValuesFrom :AvaliaoDeConformidade
+].
