@@ -41,7 +41,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "I0lYFwWGAqAktgo5",
-      "name" : "Critério Ético",
+      "name" : "CritÃ©rio Ã‰tico",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -86,7 +86,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "V2VYFwWGAqAktgpU",
-      "name" : "Em violação",
+      "name" : "Em violaÃ§Ã£o",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -101,7 +101,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "LdO4FwWGAqAktgsI",
-      "name" : "Avaliação de Conformidade",
+      "name" : "AvaliaÃ§Ã£o de Conformidade",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -116,7 +116,7 @@
       "restrictedTo" : [ "relator" ]
     }, {
       "id" : "GN54FwWGAqAktgsl",
-      "name" : "Nível de Risco",
+      "name" : "NÃ­vel de Risco",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -131,7 +131,7 @@
       "restrictedTo" : [ "quality" ]
     }, {
       "id" : "tR34FwWGAqAktgtk",
-      "name" : "Domínio",
+      "name" : "DomÃ­nio",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -161,7 +161,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "AX4EFwWGAqAktguc",
-      "name" : "Legislação",
+      "name" : "LegislaÃ§Ã£o",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -221,7 +221,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "GLrWFwWGAqAkthF6",
-      "name" : "Orgão Regulador",
+      "name" : "OrgÃ£o Regulador",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -266,7 +266,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "jQlntwWGAqAktg9v",
-      "name" : "Organização",
+      "name" : "OrganizaÃ§Ã£o",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -281,7 +281,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "e6wXtwWGAqAktg_i",
-      "name" : "Comitê de Ètica",
+      "name" : "ComitÃª de Ãˆtica",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -311,7 +311,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "pwSXtwWGAqAkthAs",
-      "name" : "Time de Governança",
+      "name" : "Time de GovernanÃ§a",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -326,7 +326,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "BszvtwWGAqAkthF0",
-      "name" : "Geração de Software",
+      "name" : "GeraÃ§Ã£o de Software",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -341,7 +341,7 @@
       "restrictedTo" : [ "event" ]
     }, {
       "id" : "snhQdwWGAqAkthTD",
-      "name" : "Crítico",
+      "name" : "CrÃ­tico",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -371,7 +371,7 @@
       "restrictedTo" : [ "quality" ]
     }, {
       "id" : "hHTQdwWGAqAkthTz",
-      "name" : "Médio",
+      "name" : "MÃ©dio",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -625,7 +625,7 @@
       }
     }, {
       "id" : "DQaGFwWGAqAkthCX",
-      "name" : "Avaliação-Software",
+      "name" : "AvaliaÃ§Ã£o-Software",
       "description" : null,
       "type" : "GeneralizationSet",
       "propertyAssignments" : null,
@@ -673,7 +673,7 @@
       } ]
     }, {
       "id" : "_HCPtwWGAqAkthEN",
-      "name" : "Agente-Avaliador-Organização",
+      "name" : "Agente-Avaliador-OrganizaÃ§Ã£o",
       "description" : null,
       "type" : "GeneralizationSet",
       "propertyAssignments" : null,
@@ -711,7 +711,7 @@
       } ]
     }, {
       "id" : "dWm4dwWGAqAkthhq",
-      "name" : "Nível-Risco-Definido",
+      "name" : "NÃ­vel-Risco-Definido",
       "description" : null,
       "type" : "GeneralizationSet",
       "propertyAssignments" : null,

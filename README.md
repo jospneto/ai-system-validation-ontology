@@ -57,7 +57,7 @@ Relações do diagrama e sua exportação:
 - **Participation** / **Creation** → restrições sobre `gufo:participatedIn` e `gufo:wasCreatedIn` (IA Generativa participa da Geração de Software, que cria o Software Gerado por IA).
 - **Generalization sets** disjuntos/completos → `owl:AllDisjointClasses` e `owl:equivalentClass` com `owl:unionOf`.
 
-> Nota: a exportação atual do `.ttl` está com labels em `rdfs:label` sem acentuação correta (arquivo gerado em Latin-1/Windows-1252 em vez de UTF-8); os nomes internos (IRIs) também tiveram acentos removidos. A correção deve ser feita em uma nova exportação do modelo.
+> Nota: o arquivo está em UTF-8. A exportação original da ferramenta perdia os acentos dos `rdfs:label`; eles foram restaurados a partir dos nomes das classes no JSON. Os nomes internos (IRIs) seguem sem acentos (ex. `:Critriotico`, `:NvelDeRisco`), como gerados pela exportação.
 
 ## JSON (OntoUML Schema)
 
@@ -71,7 +71,7 @@ Estrutura do arquivo:
 
 Esse JSON é a fonte de verdade estrutural do modelo — a partir dele são gerados tanto o diagrama (`diagrams/`) quanto a exportação gUFO (`.ttl`).
 
-> Nota: mesmo problema de codificação do `.ttl` está presente aqui — o JSON exportado está em Latin-1/Windows-1252, então termos acentuados (ex. "Critério Ético", "Domínio") aparecem corrompidos em leitores UTF-8. Recomenda-se reexportar o modelo garantindo UTF-8.
+> Nota: a ferramenta exporta o JSON em Windows-1252; o arquivo do repositório foi convertido para UTF-8. Ao reexportar o modelo, repetir a conversão.
 
 ## Ferramentas
 

@@ -15,27 +15,27 @@
     rdfs:label "Software Gerado por IA"@en.
 :Critriotico rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "Crit�rio �tico"@en.
+    rdfs:label "Critério Ético"@en.
 :Framework rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Framework"@en.
 :EmConformidade rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
     rdfs:label "Em conformidade"@en.
 :EmViolao rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
-    rdfs:label "Em viola��o"@en.
+    rdfs:label "Em violação"@en.
 :AvaliaoDeConformidade rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
-    rdfs:label "Avalia��o de Conformidade"@en.
+    rdfs:label "Avaliação de Conformidade"@en.
 :NvelDeRisco rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Quality;
-    rdfs:label "N�vel de Risco"@en.
+    rdfs:label "Nível de Risco"@en.
 :Domnio rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "Dom�nio"@en.
+    rdfs:label "Domínio"@en.
 :AgenteAvaliador rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "Agente Avaliador"@en.
 :Legislao rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Legisla��o"@en.
+    rdfs:label "Legislação"@en.
 :InstrumentoNormativo rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "Instrumento Normativo"@en.
@@ -44,29 +44,29 @@
 :EngenheiroDeSoftware rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Engenheiro de Software"@en.
 :OrgoRegulador rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Org�o Regulador"@en.
+    rdfs:label "Orgão Regulador"@en.
 :AtoNormativo rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
     rdfs:label "Ato Normativo"@en.
 :Profissional rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:label "Profissional"@en.
 :Organizao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
-    rdfs:label "Organiza��o"@en.
+    rdfs:label "Organização"@en.
 :ComitDetica rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Comit� de �tica"@en.
+    rdfs:label "Comitê de Ètica"@en.
 :AnalistaDeQualidade rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Analista de Qualidade"@en.
 :TimeDeGovernana rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Time de Governan�a"@en.
+    rdfs:label "Time de Governança"@en.
 :GeraoDeSoftware rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
     rdfs:subClassOf gufo:Event;
-    rdfs:label "Gera��o de Software"@en.
+    rdfs:label "Geração de Software"@en.
 :Crtico rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Cr�tico"@en.
+    rdfs:label "Crítico"@en.
 :Alto rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Alto"@en.
 :Mdio rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "M�dio"@en.
+    rdfs:label "Médio"@en.
 :Baixo rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Baixo"@en.
 :Framework rdfs:subClassOf :InstrumentoNormativo.
