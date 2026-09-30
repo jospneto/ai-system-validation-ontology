@@ -57,7 +57,7 @@ Relações do diagrama e sua exportação:
 - **Participation** / **Creation** → restrições sobre `gufo:participatedIn` e `gufo:wasCreatedIn` (IA Generativa participa da Geração de Software, que cria o Software Gerado por IA).
 - **Generalization sets** disjuntos/completos → `owl:AllDisjointClasses` e `owl:equivalentClass` com `owl:unionOf`.
 
-> Nota: o arquivo está em UTF-8. A exportação original da ferramenta perdia os acentos dos `rdfs:label`; eles foram restaurados a partir dos nomes das classes no JSON. Os nomes internos (IRIs) seguem sem acentos (ex. `:Critriotico`, `:NvelDeRisco`), como gerados pela exportação.
+> Nota: o arquivo está em UTF-8. A exportação original da ferramenta perdia os acentos dos `rdfs:label`; eles foram restaurados a partir dos nomes das classes no JSON. A exportação também removia as letras acentuadas dos nomes internos (IRIs), ex. `:Critriotico`; eles foram corrigidos para a forma sem acento (ex. `:CriterioEtico`, `:NivelDeRisco`).
 
 ## JSON (OntoUML Schema)
 

@@ -13,28 +13,28 @@
 :SoftwareGeradoPorIA rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "Software Gerado por IA"@en.
-:Critriotico rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+:CriterioEtico rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "Critério Ético"@en.
 :Framework rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Framework"@en.
 :EmConformidade rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
     rdfs:label "Em conformidade"@en.
-:EmViolao rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+:EmViolacao rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
     rdfs:label "Em violação"@en.
-:AvaliaoDeConformidade rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+:AvaliacaoDeConformidade rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
     rdfs:label "Avaliação de Conformidade"@en.
-:NvelDeRisco rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+:NivelDeRisco rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Quality;
     rdfs:label "Nível de Risco"@en.
-:Domnio rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+:Dominio rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "Domínio"@en.
 :AgenteAvaliador rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "Agente Avaliador"@en.
-:Legislao rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+:Legislacao rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Legislação"@en.
 :InstrumentoNormativo rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
@@ -43,95 +43,95 @@
     rdfs:label "Desenvolvedor de Software"@en.
 :EngenheiroDeSoftware rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Engenheiro de Software"@en.
-:OrgoRegulador rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Orgão Regulador"@en.
+:OrgaoRegulador rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Órgão Regulador"@en.
 :AtoNormativo rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
     rdfs:label "Ato Normativo"@en.
 :Profissional rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:label "Profissional"@en.
-:Organizao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+:Organizacao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:label "Organização"@en.
-:ComitDetica rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Comitê de Ètica"@en.
+:ComiteDeEtica rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Comitê de Ética"@en.
 :AnalistaDeQualidade rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Analista de Qualidade"@en.
-:TimeDeGovernana rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+:TimeDeGovernanca rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Time de Governança"@en.
-:GeraoDeSoftware rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
+:GeracaoDeSoftware rdf:type owl:Class, gufo:EventType, owl:NamedIndividual;
     rdfs:subClassOf gufo:Event;
     rdfs:label "Geração de Software"@en.
-:Crtico rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+:Critico rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Crítico"@en.
 :Alto rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Alto"@en.
-:Mdio rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+:Medio rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Médio"@en.
 :Baixo rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Baixo"@en.
 :Framework rdfs:subClassOf :InstrumentoNormativo.
-:EmViolao rdfs:subClassOf :SoftwareGeradoPorIA.
+:EmViolacao rdfs:subClassOf :SoftwareGeradoPorIA.
 :EmConformidade rdfs:subClassOf :SoftwareGeradoPorIA.
-:Legislao rdfs:subClassOf :InstrumentoNormativo.
+:Legislacao rdfs:subClassOf :InstrumentoNormativo.
 :DesenvolvedorDeSoftware rdfs:subClassOf :Profissional.
 :EngenheiroDeSoftware rdfs:subClassOf :Profissional.
 :AnalistaDeQualidade rdfs:subClassOf :Profissional.
-:ComitDetica rdfs:subClassOf :Organizao.
-:OrgoRegulador rdfs:subClassOf :Organizao.
-:TimeDeGovernana rdfs:subClassOf :Organizao.
+:ComiteDeEtica rdfs:subClassOf :Organizacao.
+:OrgaoRegulador rdfs:subClassOf :Organizacao.
+:TimeDeGovernanca rdfs:subClassOf :Organizacao.
 :Profissional rdfs:subClassOf :AgenteAvaliador.
-:Organizao rdfs:subClassOf :AgenteAvaliador.
-:Crtico rdfs:subClassOf :NvelDeRisco.
-:Alto rdfs:subClassOf :NvelDeRisco.
-:Mdio rdfs:subClassOf :NvelDeRisco.
-:Baixo rdfs:subClassOf :NvelDeRisco.
+:Organizacao rdfs:subClassOf :AgenteAvaliador.
+:Critico rdfs:subClassOf :NivelDeRisco.
+:Alto rdfs:subClassOf :NivelDeRisco.
+:Medio rdfs:subClassOf :NivelDeRisco.
+:Baixo rdfs:subClassOf :NivelDeRisco.
 :SoftwareGeradoPorIA owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:EmConformidade :EmViolao)
+  owl:unionOf (:EmConformidade :EmViolacao)
 ].
-[ rdf:type owl:AllDisjointClasses ] owl:members (:Framework :Legislao).
+[ rdf:type owl:AllDisjointClasses ] owl:members (:Framework :Legislacao).
 :InstrumentoNormativo owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:Framework :Legislao)
+  owl:unionOf (:Framework :Legislacao)
 ].
-[ rdf:type owl:AllDisjointClasses ] owl:members (:Organizao :Profissional).
+[ rdf:type owl:AllDisjointClasses ] owl:members (:Organizacao :Profissional).
 :AgenteAvaliador owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:Organizao :Profissional)
+  owl:unionOf (:Organizacao :Profissional)
 ].
-:NvelDeRisco owl:equivalentClass [
+:NivelDeRisco owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:Crtico :Mdio :Alto :Baixo)
+  owl:unionOf (:Critico :Medio :Alto :Baixo)
 ].
 :Estabelece rdf:type owl:ObjectProperty;
-    rdfs:domain :Critriotico;
+    rdfs:domain :CriterioEtico;
     rdfs:range :InstrumentoNormativo;
     rdfs:label "Estabelece"@en;
     rdf:type gufo:MaterialRelationshipType.
-:agenteAvaliadorHasCritriotico rdf:type owl:ObjectProperty;
+:agenteAvaliadorHasCriterioEtico rdf:type owl:ObjectProperty;
     rdfs:domain :AgenteAvaliador;
-    rdfs:range :Critriotico;
+    rdfs:range :CriterioEtico;
     rdf:type gufo:MaterialRelationshipType.
 :Utiliza_1 rdf:type owl:ObjectProperty;
     rdfs:domain :AgenteAvaliador;
     rdfs:range :SoftwareGeradoPorIA;
     rdfs:label "Utiliza"@en;
     rdf:type gufo:MaterialRelationshipType.
-:critrioticoHasSoftwareGeradoPorIa rdf:type owl:ObjectProperty;
-    rdfs:domain :Critriotico;
+:criterioEticoHasSoftwareGeradoPorIa rdf:type owl:ObjectProperty;
+    rdfs:domain :CriterioEtico;
     rdfs:range :SoftwareGeradoPorIA;
     rdf:type gufo:MaterialRelationshipType.
-:Domnio rdfs:subClassOf [
+:Dominio rdfs:subClassOf [
   rdf:type owl:Restriction;
   owl:onProperty gufo:externallyDependsOn;
-  owl:someValuesFrom :Critriotico
+  owl:someValuesFrom :CriterioEtico
 ].
-:AvaliaoDeConformidade rdfs:subClassOf [
+:AvaliacaoDeConformidade rdfs:subClassOf [
   rdf:type owl:Restriction;
   owl:onProperty gufo:mediates;
   owl:someValuesFrom :SoftwareGeradoPorIA
 ].
-:NvelDeRisco rdfs:subClassOf [
+:NivelDeRisco rdfs:subClassOf [
   rdf:type owl:Restriction;
   owl:onProperty [ owl:inverseOf gufo:inheresIn ];
   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
@@ -141,25 +141,25 @@
   rdf:type owl:Restriction;
   owl:onProperty gufo:inheresIn;
   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
-  owl:onClass :NvelDeRisco
+  owl:onClass :NivelDeRisco
 ].
 :AgenteAvaliador rdfs:subClassOf [
   rdf:type owl:Restriction;
   owl:onProperty gufo:mediates;
-  owl:someValuesFrom :AvaliaoDeConformidade
+  owl:someValuesFrom :AvaliacaoDeConformidade
 ].
 :AtoNormativo rdfs:subClassOf [
   rdf:type owl:Restriction;
   owl:onProperty gufo:mediates;
   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
-  owl:onClass :Critriotico
+  owl:onClass :CriterioEtico
 ], [
   rdf:type owl:Restriction;
   owl:onProperty gufo:mediates;
   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
   owl:onClass :InstrumentoNormativo
 ].
-:GeraoDeSoftware rdfs:subClassOf [
+:GeracaoDeSoftware rdfs:subClassOf [
   rdf:type owl:Restriction;
   owl:onProperty [ owl:inverseOf gufo:participatedIn ];
   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
@@ -169,9 +169,9 @@
   rdf:type owl:Restriction;
   owl:onProperty gufo:participatedIn;
   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
-  owl:onClass :GeraoDeSoftware
+  owl:onClass :GeracaoDeSoftware
 ].
-:GeraoDeSoftware rdfs:subClassOf [
+:GeracaoDeSoftware rdfs:subClassOf [
   rdf:type owl:Restriction;
   owl:onProperty [ owl:inverseOf gufo:wasCreatedIn ];
   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
@@ -181,9 +181,9 @@
   rdf:type owl:Restriction;
   owl:onProperty gufo:wasCreatedIn;
   owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger;
-  owl:onClass :GeraoDeSoftware
+  owl:onClass :GeracaoDeSoftware
 ].
-:AvaliaoDeConformidade rdfs:subClassOf [
+:AvaliacaoDeConformidade rdfs:subClassOf [
   rdf:type owl:Restriction;
   owl:onProperty gufo:mediates;
   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;

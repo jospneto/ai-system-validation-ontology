@@ -221,7 +221,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "GLrWFwWGAqAkthF6",
-      "name" : "Orgão Regulador",
+      "name" : "Órgão Regulador",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -281,7 +281,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "e6wXtwWGAqAktg_i",
-      "name" : "Comitê de Ètica",
+      "name" : "Comitê de Ética",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
