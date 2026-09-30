@@ -2,11 +2,11 @@
 
 Ontologia de fundamentação (OntoUML/UFO) para validação ética e de conformidade de sistemas de IA generativa — projeto de mestrado.
 
-![AI System Validation Ontology (v5)](<diagrams/AI System Validation Ontology-v5.jpg>)
+![AI System Validation Ontology (v6)](<diagrams/AI System Validation Ontology-v6.jpg>)
 
 ## Estrutura
 
-- `diagrams/` — diagrama principal da ontologia (OntoUML, v5), imagem exportada do modelo.
+- `diagrams/` — diagrama principal da ontologia (OntoUML, v6), imagem exportada do modelo.
 - `model/` — exportações do modelo:
   - `AI System Ethics Validation Ontology.json` — exportação JSON (OntoUML Schema, via ontouml-js/OLED ou ferramenta equivalente).
   - `AI System Ethics Validation Ontology.ttl` — exportação em gUFO (OWL/Turtle), gerada a partir do modelo OntoUML.
@@ -18,7 +18,7 @@ Ontologia de fundamentação (OntoUML/UFO) para validação ética e de conformi
 
 ## Sobre o modelo
 
-Ontologia baseada em UFO (Unified Foundational Ontology). Principais conceitos da versão atual (v5):
+Ontologia baseada em UFO (Unified Foundational Ontology). Principais conceitos da versão atual (v6):
 
 - **IA Generativa** — participa da **Geração de Software** (evento), que cria o **Software Gerado por IA**.
 - **Software Gerado por IA** — particionado nas fases **Em Conformidade** / **Em Violação** (generalization set disjunto e completo).

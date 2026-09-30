@@ -89,10 +89,10 @@
   rdf:type owl:Class;
   owl:unionOf (:EmConformidade :EmViolao)
 ].
-[ rdf:type owl:AllDisjointClasses ] owl:members (:Legislao :Framework).
+[ rdf:type owl:AllDisjointClasses ] owl:members (:Framework :Legislao).
 :InstrumentoNormativo owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:Legislao :Framework)
+  owl:unionOf (:Framework :Legislao)
 ].
 [ rdf:type owl:AllDisjointClasses ] owl:members (:Organizao :Profissional).
 :AgenteAvaliador owl:equivalentClass [
@@ -101,7 +101,7 @@
 ].
 :NvelDeRisco owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:Alto :Baixo :Crtico :Mdio)
+  owl:unionOf (:Crtico :Mdio :Alto :Baixo)
 ].
 :Estabelece rdf:type owl:ObjectProperty;
     rdfs:domain :Critriotico;
