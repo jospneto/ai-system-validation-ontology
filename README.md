@@ -15,11 +15,12 @@ Ontologia de fundamentação (OntoUML/UFO) para validação ética e de conformi
 - `model/` — exportações do modelo:
   - `AI System Ethics Validation Ontology.json` — exportação JSON (OntoUML Schema, via ontouml-js/OLED ou ferramenta equivalente).
   - `AI System Ethics Validation Ontology.ttl` — exportação em gUFO (OWL/Turtle), gerada a partir do modelo OntoUML.
-- `docs/` — documentação complementar (glossário, decisões de modelagem, etc.).
+- `docs/` — documentação complementar:
+  - `Documento de Especificação de Requisitos.pdf` — ORSD da ontologia (versão PDF).
 
 ## Documentação
 
-- [ORSD — Documento de Especificação de Requisitos](https://docs.google.com/document/d/1ffh350ql3VRR-RyRwtUG0XIKUOtVKItY-1K3-VgVsHA/edit?usp=sharing): objetivo, escopo, usuários finais, casos de uso, requisitos funcionais (questões de competência CQ1–CQ6), requisitos não funcionais (RNF1–RNF3) e pré-glossário de termos que fundamentam esta ontologia.
+- [ORSD — Documento de Especificação de Requisitos](https://docs.google.com/document/d/1ffh350ql3VRR-RyRwtUG0XIKUOtVKItY-1K3-VgVsHA/edit?usp=sharing): objetivo, escopo, usuários finais, casos de uso, requisitos funcionais (questões de competência CQ1–CQ6), requisitos não funcionais (RNF1–RNF3) e pré-glossário de termos que fundamentam esta ontologia. Versão em PDF no repositório: [`docs/Documento de Especificação de Requisitos.pdf`](<docs/Documento de Especificação de Requisitos.pdf>).
 
 ## Sobre o modelo
 
