@@ -28,7 +28,7 @@
 :NivelDeRisco rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Quality;
     rdfs:label "Nível de Risco"@en.
-:Dominio rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+:Dominio rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "Domínio"@en.
 :AgenteAvaliador rdf:type owl:Class, gufo:Category, owl:NamedIndividual;
@@ -44,7 +44,7 @@
 :EngenheiroDeSoftware rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Engenheiro de Software"@en.
 :OrgaoRegulador rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Órgão Regulador"@en.
+    rdfs:label "Orgão Regulador"@en.
 :AtoNormativo rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:Relator;
     rdfs:label "Ato Normativo"@en.
@@ -52,8 +52,6 @@
     rdfs:label "Profissional"@en.
 :Organizacao rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:label "Organização"@en.
-:ComiteDeEtica rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Comitê de Ética"@en.
 :AnalistaDeQualidade rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Analista de Qualidade"@en.
 :TimeDeGovernanca rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
@@ -69,6 +67,45 @@
     rdfs:label "Médio"@en.
 :Baixo rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Baixo"@en.
+:Transparencia rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Transparência"@en.
+:Equidade rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Equidade"@en.
+:Privacidade rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Privacidade"@en.
+:Responsabilidade rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
+    rdfs:label "Responsabilidade"@en.
+:ResultadoDaConformidade rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:IntrinsicMode;
+    rdfs:label "Resultado da Conformidade"@en.
+:Atendido rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Atendido"@en.
+:Violado rdf:type owl:Class, gufo:Phase, owl:NamedIndividual;
+    rdfs:label "Violado"@en.
+:Setorial rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Setorial"@en.
+:Geral rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
+    rdfs:subClassOf gufo:FunctionalComplex;
+    rdfs:label "Geral"@en.
+:Saude rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Saúde"@en.
+:Financeiro rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Financeiro"@en.
+:Juridico rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Jurídico"@en.
+:Educacao rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Educação"@en.
+:DesenvolvimentoDeSoftware rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Desenvolvimento de Software"@en.
+:AutomacaoDeTarefas rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Automação de Tarefas"@en.
+:Audiovisual rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Audiovisual"@en.
+:GeracaoDeConteudo rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Geração de Conteúdo"@en.
+:ComiteDeEtica rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
+    rdfs:label "Comitê de Ética"@en.
 :Framework rdfs:subClassOf :InstrumentoNormativo.
 :EmViolacao rdfs:subClassOf :SoftwareGeradoPorIA.
 :EmConformidade rdfs:subClassOf :SoftwareGeradoPorIA.
@@ -76,7 +113,6 @@
 :DesenvolvedorDeSoftware rdfs:subClassOf :Profissional.
 :EngenheiroDeSoftware rdfs:subClassOf :Profissional.
 :AnalistaDeQualidade rdfs:subClassOf :Profissional.
-:ComiteDeEtica rdfs:subClassOf :Organizacao.
 :OrgaoRegulador rdfs:subClassOf :Organizacao.
 :TimeDeGovernanca rdfs:subClassOf :Organizacao.
 :Profissional rdfs:subClassOf :AgenteAvaliador.
@@ -85,23 +121,59 @@
 :Alto rdfs:subClassOf :NivelDeRisco.
 :Medio rdfs:subClassOf :NivelDeRisco.
 :Baixo rdfs:subClassOf :NivelDeRisco.
+:Transparencia rdfs:subClassOf :CriterioEtico.
+:Equidade rdfs:subClassOf :CriterioEtico.
+:Privacidade rdfs:subClassOf :CriterioEtico.
+:Responsabilidade rdfs:subClassOf :CriterioEtico.
+:Atendido rdfs:subClassOf :ResultadoDaConformidade.
+:Violado rdfs:subClassOf :ResultadoDaConformidade.
+:Saude rdfs:subClassOf :Setorial.
+:Financeiro rdfs:subClassOf :Setorial.
+:Juridico rdfs:subClassOf :Setorial.
+:Educacao rdfs:subClassOf :Setorial.
+:Saude rdfs:subClassOf :Dominio.
+:Financeiro rdfs:subClassOf :Dominio.
+:Juridico rdfs:subClassOf :Dominio.
+:Educacao rdfs:subClassOf :Dominio.
+:DesenvolvimentoDeSoftware rdfs:subClassOf :Geral.
+:AutomacaoDeTarefas rdfs:subClassOf :Geral.
+:Audiovisual rdfs:subClassOf :Geral.
+:GeracaoDeConteudo rdfs:subClassOf :Geral.
+:DesenvolvimentoDeSoftware rdfs:subClassOf :Dominio.
+:AutomacaoDeTarefas rdfs:subClassOf :Dominio.
+:Audiovisual rdfs:subClassOf :Dominio.
+:GeracaoDeConteudo rdfs:subClassOf :Dominio.
+:ComiteDeEtica rdfs:subClassOf :Organizacao.
 :SoftwareGeradoPorIA owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:EmConformidade :EmViolacao)
+  owl:unionOf (:EmViolacao :EmConformidade)
 ].
-[ rdf:type owl:AllDisjointClasses ] owl:members (:Framework :Legislacao).
+[ rdf:type owl:AllDisjointClasses ] owl:members (:Legislacao :Framework).
 :InstrumentoNormativo owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:Framework :Legislacao)
+  owl:unionOf (:Legislacao :Framework)
 ].
-[ rdf:type owl:AllDisjointClasses ] owl:members (:Organizacao :Profissional).
+[ rdf:type owl:AllDisjointClasses ] owl:members (:Profissional :Organizacao).
 :AgenteAvaliador owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:Organizacao :Profissional)
+  owl:unionOf (:Profissional :Organizacao)
 ].
 :NivelDeRisco owl:equivalentClass [
   rdf:type owl:Class;
-  owl:unionOf (:Critico :Medio :Alto :Baixo)
+  owl:unionOf (:Alto :Critico :Medio :Baixo)
+].
+[ rdf:type owl:AllDisjointClasses ] owl:members (:Equidade :Responsabilidade :Transparencia :Privacidade).
+:CriterioEtico owl:equivalentClass [
+  rdf:type owl:Class;
+  owl:unionOf (:Equidade :Responsabilidade :Transparencia :Privacidade)
+].
+:ResultadoDaConformidade owl:equivalentClass [
+  rdf:type owl:Class;
+  owl:unionOf (:Violado :Atendido)
+].
+:Dominio owl:equivalentClass [
+  rdf:type owl:Class;
+  owl:unionOf (:Saude :Audiovisual :Juridico :AutomacaoDeTarefas :DesenvolvimentoDeSoftware :Financeiro :Educacao :GeracaoDeConteudo)
 ].
 :Estabelece rdf:type owl:ObjectProperty;
     rdfs:domain :CriterioEtico;
@@ -121,11 +193,31 @@
     rdfs:domain :CriterioEtico;
     rdfs:range :SoftwareGeradoPorIA;
     rdf:type gufo:MaterialRelationshipType.
-:Dominio rdfs:subClassOf [
-  rdf:type owl:Restriction;
-  owl:onProperty gufo:externallyDependsOn;
-  owl:someValuesFrom :CriterioEtico
-].
+:Valida rdf:type owl:ObjectProperty;
+    rdfs:domain :ResultadoDaConformidade;
+    rdfs:range :SoftwareGeradoPorIA;
+    rdfs:label "Valida"@en;
+    rdf:type gufo:MaterialRelationshipType.
+:avaliacaoDeConformidadeHasDesenvolvedorDeSoftware rdf:type owl:ObjectProperty;
+    rdfs:domain :AvaliacaoDeConformidade;
+    rdfs:range :DesenvolvedorDeSoftware;
+    rdf:type gufo:MaterialRelationshipType.
+:avaliacaoDeConformidadeHasEngenheiroDeSoftware rdf:type owl:ObjectProperty;
+    rdfs:domain :AvaliacaoDeConformidade;
+    rdfs:range :EngenheiroDeSoftware;
+    rdf:type gufo:MaterialRelationshipType.
+:avaliacaoDeConformidadeHasAnalistaDeQualidade rdf:type owl:ObjectProperty;
+    rdfs:domain :AvaliacaoDeConformidade;
+    rdfs:range :AnalistaDeQualidade;
+    rdf:type gufo:MaterialRelationshipType.
+:avaliacaoDeConformidadeHasOrgaoRegulador rdf:type owl:ObjectProperty;
+    rdfs:domain :AvaliacaoDeConformidade;
+    rdfs:range :OrgaoRegulador;
+    rdf:type gufo:MaterialRelationshipType.
+:avaliacaoDeConformidadeHasTimeDeGovernanca rdf:type owl:ObjectProperty;
+    rdfs:domain :AvaliacaoDeConformidade;
+    rdfs:range :TimeDeGovernanca;
+    rdf:type gufo:MaterialRelationshipType.
 :AvaliacaoDeConformidade rdfs:subClassOf [
   rdf:type owl:Restriction;
   owl:onProperty gufo:mediates;
@@ -188,4 +280,20 @@
   owl:onProperty gufo:mediates;
   owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
   owl:onClass :IAGenerativa
+], [
+  rdf:type owl:Restriction;
+  owl:onProperty gufo:mediates;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :ResultadoDaConformidade
+].
+:AnalistaDeQualidade rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty [ owl:inverseOf :avaliacaoDeConformidadeHasAnalistaDeQualidade ];
+  owl:someValuesFrom :AvaliacaoDeConformidade
+].
+:AvaliacaoDeConformidade rdfs:subClassOf [
+  rdf:type owl:Restriction;
+  owl:onProperty :avaliacaoDeConformidadeHasAnalistaDeQualidade;
+  owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger;
+  owl:onClass :AnalistaDeQualidade
 ].
