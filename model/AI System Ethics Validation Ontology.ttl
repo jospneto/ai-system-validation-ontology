@@ -24,7 +24,7 @@
     rdfs:label "Compliance Assessment"@en.
 :RiskLevel rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:IntrinsicMode;
-    rdfs:label "\tRisk Level"@en.
+    rdfs:label "Risk Level"@en.
 :Domain rdf:type owl:Class, gufo:RoleMixin, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "Domain"@en.
@@ -35,7 +35,7 @@
     rdfs:label "Legislation"@en.
 :NormativeInstrument rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
-    rdfs:label "\tNormative Instrument"@en.
+    rdfs:label "Normative Instrument"@en.
 :SoftwareDeveloper rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Software Developer"@en.
 :SoftwareEngineer rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
@@ -57,11 +57,11 @@
     rdfs:subClassOf gufo:Event;
     rdfs:label "Software Generation"@en.
 :Critical rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "\tCritical"@en.
+    rdfs:label "Critical"@en.
 :High rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "High"@en.
 :Medium rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "\tMedium"@en.
+    rdfs:label "Medium"@en.
 :Low rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Low"@en.
 :Transparency rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
@@ -69,9 +69,9 @@
 :Fairness rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Fairness"@en.
 :Privacy rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "\tPrivacy"@en.
+    rdfs:label "Privacy"@en.
 :Accountability rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "\tAccountability"@en.
+    rdfs:label "Accountability"@en.
 :ComplianceResult rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:IntrinsicMode;
     rdfs:label "Compliance Result"@en.
@@ -86,9 +86,9 @@
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "General"@en.
 :Healthcare rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "\tHealthcare"@en.
+    rdfs:label "Healthcare"@en.
 :Financial rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "\tFinancial"@en.
+    rdfs:label "Financial"@en.
 :Legal rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Legal"@en.
 :Education rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
@@ -98,13 +98,13 @@
 :TaskAutomation rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Task Automation"@en.
 :Audiovisual rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "\tAudiovisual"@en.
+    rdfs:label "Audiovisual"@en.
 :ContentGeneration rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Content Generation"@en.
 :EthicsCommittee rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
     rdfs:label "Ethics Committee"@en.
 :AppliedSoftware rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
-    rdfs:label "Applied Software\n"@en.
+    rdfs:label "Applied Software"@en.
 :ApplicableCriterion rdf:type owl:Class, gufo:SubKind, owl:NamedIndividual;
     rdfs:label "Applicable Criterion"@en.
 :CriterionApplicability rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
@@ -114,9 +114,9 @@
     rdfs:subClassOf gufo:Relator;
     rdfs:label "Domain Application"@en.
 :IssuingInstrument rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Issuing Instrument\n"@en.
+    rdfs:label "Issuing Instrument"@en.
 :EstablishedCriterion rdf:type owl:Class, gufo:Role, owl:NamedIndividual;
-    rdfs:label "Established Criterion\n"@en.
+    rdfs:label "Established Criterion"@en.
 :EthicalCriterion rdf:type owl:Class, gufo:Kind, owl:NamedIndividual;
     rdfs:subClassOf gufo:FunctionalComplex;
     rdfs:label "Ethical Criterion"@en.
@@ -234,7 +234,7 @@
 :applicableIn rdf:type owl:ObjectProperty;
     rdfs:domain :Domain;
     rdfs:range :ApplicableCriterion;
-    rdfs:label "applicable in\n"@en;
+    rdfs:label "applicable in"@en;
     rdf:type gufo:MaterialRelationshipType.
 :appliedIn rdf:type owl:ObjectProperty;
     rdfs:domain :Domain;

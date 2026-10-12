@@ -101,7 +101,7 @@
       "restrictedTo" : [ "relator" ]
     }, {
       "id" : "GN54FwWGAqAktgsl",
-      "name" : "\tRisk Level",
+      "name" : "Risk Level",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -161,7 +161,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "oapkFwWGAqAktgy9",
-      "name" : "\tNormative Instrument",
+      "name" : "Normative Instrument",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -311,7 +311,7 @@
       "restrictedTo" : [ "event" ]
     }, {
       "id" : "snhQdwWGAqAkthTD",
-      "name" : "\tCritical",
+      "name" : "Critical",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -341,7 +341,7 @@
       "restrictedTo" : [ "intrinsic-mode" ]
     }, {
       "id" : "hHTQdwWGAqAkthTz",
-      "name" : "\tMedium",
+      "name" : "Medium",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -401,7 +401,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "FnXjfwWFYEAu6gwZ",
-      "name" : "\tPrivacy",
+      "name" : "Privacy",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -416,7 +416,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "WG3jfwWFYEAu6gwi",
-      "name" : "\tAccountability",
+      "name" : "Accountability",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -506,7 +506,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "bFgXfwWFYEAu6hFt",
-      "name" : "\tHealthcare",
+      "name" : "Healthcare",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -521,7 +521,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "bMQXfwWFYEAu6hF2",
-      "name" : "\tFinancial",
+      "name" : "Financial",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -596,7 +596,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "9FWPfwWFYEAu6hML",
-      "name" : "\tAudiovisual",
+      "name" : "Audiovisual",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -641,7 +641,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "xhO.jIWGAqAkth0x",
-      "name" : "Applied Software\n",
+      "name" : "Applied Software",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -701,7 +701,7 @@
       "restrictedTo" : [ "relator" ]
     }, {
       "id" : "6EzJjIWGAqAktiDp",
-      "name" : "Issuing Instrument\n",
+      "name" : "Issuing Instrument",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -716,7 +716,7 @@
       "restrictedTo" : [ "functional-complex" ]
     }, {
       "id" : "K.ipjIWGAqAktiEI",
-      "name" : "Established Criterion\n",
+      "name" : "Established Criterion",
       "description" : null,
       "type" : "Class",
       "propertyAssignments" : null,
@@ -2340,7 +2340,7 @@
       } ]
     }, {
       "id" : "jXwBjIWGAqAkth2o",
-      "name" : "applicable in\n",
+      "name" : "applicable in",
       "description" : null,
       "type" : "Relation",
       "propertyAssignments" : null,

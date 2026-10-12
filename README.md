@@ -97,6 +97,8 @@ Relações do diagrama e sua exportação:
 - **Generalization sets** disjuntos/completos → `owl:AllDisjointClasses` e `owl:equivalentClass` com `owl:unionOf`.
 - **ComponentOf** (Domain *applies* AI-Generated Software) não é exportada como restrição pela ferramenta; fica representada apenas no JSON/diagrama.
 
+> Nota: alguns nomes de elementos no Visual Paradigm têm TAB inicial ou quebra de linha final (ex. `"\tRisk Level"`, `"Applied Software\n"`), que a exportação leva para os `name` do JSON e os `rdfs:label` do TTL. Esses espaços foram removidos nos dois arquivos. Ao reexportar, repetir a correção ou ajustar os nomes no modelo.
+
 ## JSON (OntoUML Schema)
 
 `model/AI System Ethics Validation Ontology.json` é a exportação nativa do modelo no formato [ontouml-schema](https://github.com/OntoUML/ontouml-schema), usado pelo OntoUML Plugin / ontouml-js para representar o projeto de forma estruturada e independente de ferramenta.
