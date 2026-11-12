@@ -99,6 +99,10 @@ Relações do diagrama e sua exportação:
 
 > Nota: alguns nomes de elementos no Visual Paradigm têm TAB inicial ou quebra de linha final (ex. `"\tRisk Level"`, `"Applied Software\n"`), que a exportação leva para os `name` do JSON e os `rdfs:label` do TTL. Esses espaços foram removidos nos dois arquivos. Ao reexportar, repetir a correção ou ajustar os nomes no modelo.
 
+## Visualização (WebVOWL)
+
+A exportação gUFO pode ser explorada interativamente no [WebVOWL](https://service.tib.eu/webvowl/): [`AI System Ethics Validation Ontology.ttl` no WebVOWL](https://service.tib.eu/webvowl/#file=AI%20System%20Ethics%20Validation%20Ontology.ttl).
+
 ## JSON (OntoUML Schema)
 
 `model/AI System Ethics Validation Ontology.json` é a exportação nativa do modelo no formato [ontouml-schema](https://github.com/OntoUML/ontouml-schema), usado pelo OntoUML Plugin / ontouml-js para representar o projeto de forma estruturada e independente de ferramenta.
